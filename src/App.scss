@@ -1,16 +1,11 @@
-/* #root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	border: 2px solid;
-} */
+
 
   .weather {
     padding: 2em;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.507);
-    max-width: 500px;
-    width: 500px;
+    max-width: 320px;
+    width: 300px;
 		outline: 4px solid rgba(255, 255, 255, 0.384);
 		backdrop-filter: blur(5px);
 
@@ -34,7 +29,7 @@
 			justify-content: center;
 	 		align-items: center;
 	 		height: 100%;
-	 		font-size: 10rem;
+	 		font-size: 7rem;
 			 animation: pulse 8s infinite; 
 			}
 	
@@ -67,7 +62,7 @@
 				line-height: 65px;
 			}
 			&-item--temp {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 65px;
 			}
      
@@ -118,7 +113,7 @@
 		place-items: center;
 		margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,6 +126,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		min-width: 320px;
+		min-width: 300px;
 		min-height: 100vh;
 	}
