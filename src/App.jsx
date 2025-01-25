@@ -258,7 +258,7 @@ function App() {
 			</div>
 		);
 	if (!weather)
-		return <img alt="termometro" src="src\assets\Images\termometro.gif"></img>;
+		return <img alt="termometro" src="src\images\termometro.gif"></img>;
 
 	const temp = isCelsius
 		? `${weather.temperature} °C`
