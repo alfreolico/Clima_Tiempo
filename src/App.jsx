@@ -180,13 +180,13 @@ import {
 } from './assets/Images';
 
 const bgImages = [
+	bgthunderstorm,
+	bgdrizzle,
+	bgrain,
+	bgsnow,
 	bgatmosphere,
 	bgclear,
 	bgclouds,
-	bgdrizzle,
-	bgsnow,
-	bgrain,
-	bgthunderstorm,
 ];
 
 function App() {
@@ -258,7 +258,12 @@ function App() {
 			</div>
 		);
 	if (!weather)
-		return <img alt="termometro" src="src\images\termometro.gif"></img>;
+		return (
+			<video autoPlay loop muted>
+				<source src="src/images/termometro.mp4" type="video/mp4" />
+				Tu navegador no soporta el elemento video.
+			</video>
+		);
 
 	const temp = isCelsius
 		? `${weather.temperature} °C`

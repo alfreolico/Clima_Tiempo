@@ -1,21 +1,3 @@
-// import thunderstorm from './src/Images/thunderstorm.jpg';
-// import drizzle from './src/Images/drizzle.jpg';
-// import rain from './src/Images/rain.jfif';
-// import snow from './src/Images/snow.jfif';
-// import atmosphere from './src/Images/atmosphere.jfif';
-// import clear from './src/Images/clear.jfif';
-// import clouds from './src/Images/clouds.jpg';
-
-// export const imagesWeather = {
-// 	thunderstorm,
-// 	drizzle,
-// 	rain,
-// 	snow,
-// 	atmosphere,
-// 	clear,
-// 	clouds,
-// };
-
 export const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?';
 export const codes = {
 	thunderstorm: [200, 201, 202, 210, 211, 212, 221, 230, 231, 232],
