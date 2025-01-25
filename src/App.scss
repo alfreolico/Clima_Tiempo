@@ -1,0 +1,136 @@
+/* #root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	border: 2px solid;
+} */
+
+  .weather {
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.507);
+    max-width: 500px;
+    width: 500px;
+		outline: 4px solid rgba(255, 255, 255, 0.384);
+		backdrop-filter: blur(5px);
+
+    &__title {
+      text-align: center;
+    }
+
+    &__city {
+      text-align: center;
+    }
+
+    &__content {
+      display: grid;
+			grid-template-columns: repeat(2, 1fr);
+      gap: 1em;
+			margin-block: 1em;
+    }
+
+    &__icon {
+      display: flex;
+			justify-content: center;
+	 		align-items: center;
+	 		height: 100%;
+	 		font-size: 10rem;
+			 animation: pulse 8s infinite; 
+			}
+	
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.2);
+				}
+				100% {
+					transform: scale(1);
+				}
+			
+			
+    }
+
+    &__info {
+      display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&-item {
+        font-size: 1.5rem;
+				text-align: center;
+      }	
+			&-item--main {
+				font-size: 2rem;
+				line-height: 65px;
+			}
+			&-item--temp {
+				font-size: 4rem;
+				line-height: 65px;
+			}
+     
+		}
+
+		&__details {
+			display: flex;
+			justify-content: space-between;
+			gap: 1em;
+
+			&-item {
+				font-size: .88rem;
+				display: flex;
+				gap: .25em;
+				align-items: center;
+
+				svg {
+					font-size: 2.25rem;
+				}
+			}
+		}
+		
+
+    }
+  
+
+  .btn {
+   display: block;
+	 margin-inline: auto;
+	 margin-top: 2em;
+	 padding: .5em 1em;
+	 border: none;
+	 border-radius: 10px;
+	 outline: 4px solid white;
+	 
+    &:hover {
+      background: #0611aa80;
+    }
+  }
+
+  h1,h2,h3, p, button {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+	body {
+		justify-content: center;
+  	align-items: center;
+		display: flex;
+		place-items: center;
+		margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+	}
+
+	.error {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 320px;
+		min-height: 100vh;
+	}
